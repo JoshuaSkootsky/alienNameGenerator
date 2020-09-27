@@ -31,3 +31,9 @@ function setResult() {
    result.innerHTML = isAscii(textField.value) ? " the string is ASCII " : " the string is not ASCII"
 }
 ```
+
+# Check out the REPL.it
+
+[Link here to REPL.it for Is It ASCII?](https://repl.it/@JoshuaSkootsky/tellMeIfItsAscii)
+
+REPL.it has an experimental function where they will turn on version control and commit to GitHub. So Hello from REPL.it!
