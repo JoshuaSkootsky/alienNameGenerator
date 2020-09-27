@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Console', Monaco, monospace;
+  color: black;
+}
+
+body {
+   background: #92dfdf;
+  height: 100%;
+  padding: 5%;
+  margin: 5%;
+  width: 100%;
+}
+header {
+  height: 20%;
+	background-color: #f0903c;
+  padding: 3%;
+}
+
+footer {
+	background-color: #e97f22;
+  padding: 3%;
+}
