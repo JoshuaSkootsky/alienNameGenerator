@@ -1,6 +1,6 @@
 # Is it Ascii?
 
-Check it [out on GitHub Pages here] (https://joshuaskootsky.github.io/tellMeIfItsAscii/).
+Check it [out on GitHub Pages here](https://joshuaskootsky.github.io/tellMeIfItsAscii/).
 
 # This is just a repo for a very simple site
 
