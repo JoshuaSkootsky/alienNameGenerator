@@ -25,17 +25,11 @@ function alienNameMaker(name, encoder) {
     const char = name[i].toLowerCase();
 
     const alienCharArray = encoder[char];
-    // this char array may be undefined
+    // this char array may be undefined. if not truthy, skip it
     if (alienCharArray) {
       const alienChar = chooseRandom(alienCharArray);
        alienName = alienName + alienChar;
     }
-
-    // choose an alien char from the array
-    
-
-    // skip non-truthy values of alienChar
-    
    
   }
   return alienName;
