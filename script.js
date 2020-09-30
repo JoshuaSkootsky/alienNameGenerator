@@ -14,7 +14,7 @@ function getRandomInt(max) {
 
 function setResult() {
   const name = textField.value;
-   result.innerHTML = alienNameMaker(name, encoder)
+   result.innerText = alienNameMaker(name, encoder)
 }
 
 function alienNameMaker(name, encoder) {
