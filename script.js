@@ -1,7 +1,12 @@
-const textField = document.getElementById('comment');
-const result = document.getElementById('result');
+const humanNameInput = document.getElementById('humanNameInput');
+const alienNameDisplay = document.getElementById('alienNameDisplay');
 // add event listener to textField
-textField.addEventListener('input', setResult);
+humanNameInput.addEventListener('input', encodeName);
+
+const alienNameInput = document.getElementById('alienNameInput');
+const humanNameDisplay = document.getElementById('humanNameDisplay');
+alienNameInput.addEventListener('input', decodeName)
+
 
 function chooseRandom(array) {
   const max = array.length;
@@ -12,9 +17,14 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
 
-function setResult() {
-  const name = textField.value;
-   result.innerText = alienNameMaker(name, encoder)
+function encodeName() {
+  const name = humanNameInput.value;
+  alienNameDisplay.innerText = alienNameMaker(name, encoder)
+}
+
+function decodeName() {
+  const name = alienNameInput.value;
+  humanNameDisplay.innerText = alienNameDecoder(name, encoder)
 }
 
 function alienNameMaker(name, encoder) {
@@ -33,6 +43,31 @@ function alienNameMaker(name, encoder) {
    
   }
   return alienName;
+}
+
+
+function alienNameDecoder(alienName, encoder) {
+  let humanName = '';
+  const decoder = makeDecoder(encoder);
+  for (let i = 0; i < alienName.length; i++) {
+    // need to fuzz this dynamically
+    let alienLetter = alienName[i];
+    let humanLetter = decoder[alienLetter];
+    if (humanLetter) {
+        humanName += humanLetter;
+    }
+    else {
+      while(!humanLetter && i < alienName.length) {
+        alienLetter += alienName[++i];
+        if(decoder[alienLetter]) {
+          humanLetter = decoder[alienLetter];
+          humanName += humanLetter;
+        }
+      } 
+    }
+  
+  }
+  return humanName;
 }
 
 /* function doThing(){
@@ -68,3 +103,16 @@ const encoder = {
     y: ["yamska-i'liax", "¥"],
     z: ["Ⱬ", "Ω"]
   };
+
+function makeDecoder(encoding) {
+  const decoder = {};
+  for (const letter in encoding) {
+    const arr = encoding[letter];
+    arr.forEach(alienWord => {
+      decoder[alienWord] = letter;
+    })
+    
+  }
+  return decoder;
+}
+console.log(makeDecoder(encoder))
