@@ -2,6 +2,8 @@
 
 Check it [out on GitHub Pages here](https://joshuaskootsky.github.io/tellMeIfItsAscii/).
 
+Note: this link may not work, as the more interesting and fun 'Alien Name Generator' is now the master branch.
+
 # This is just a repo for a very simple site
 
 There's some cool stuff going on. ASCIIness is tested by using charCodeAt. If the charCode is above 127... it isn't ASCII!
