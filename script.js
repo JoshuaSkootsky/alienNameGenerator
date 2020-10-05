@@ -101,7 +101,8 @@ const encoder = {
     w: ["weewo", "∑"],
     x: ["⸖", "≈"],
     y: ["yamska-i'liax", "¥"],
-    z: ["Ⱬ", "Ω"]
+    z: ["Ⱬ", "Ω"],
+    ' ': [' ', '.', '-']
   };
 
 function makeDecoder(encoding) {
@@ -115,4 +116,3 @@ function makeDecoder(encoding) {
   }
   return decoder;
 }
-console.log(makeDecoder(encoder))
