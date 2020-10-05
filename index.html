@@ -4,27 +4,30 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Is it Ascii?</title>
+	<title>Alien Name Generator</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 	<header>
-		Since the dawn of time, people have wanted to know. Maybe it's ASCII?
+		Since the dawn of time, people have wanted to know... what is their alien name?
 	</header>
 
 	<main>
-		<h1> Is it ASCII? </h1>
-		<p> Add text to field to find out of it's ASCII... or not! </p>
-		<input type="text" id="comment" name="comment" value="Type here" autocomplete="off">
-    </input>
-    <p id="result">Results will be displayed here!</p>
+		<h1> What is my alien name?</h1>
+		<label for="humanNameInput"> Your name: </label>
+		<input type="text" id="humanNameInput" name="humanNameInput" placeholder="Type here" autocomplete="off">
+    <p> Your alien name is:  <div id="alienNameDisplay">Result will be displayed here!</div>  <p>
 
-
+    <h2> Would you like to decode your alien name? </h2>
+		<label for="alienNameInput"> Your alien name: </label>
+		<input type="text" id="alienNameInput" name="alienNameInput" placeholder="Alien name here" autocomplete="off">
+    <p> Your human name is:  <div id="humanNameDisplay">Result will be displayed here!</div>  <p>
 	</main>
 	<footer>
-		<p>&copy; Programming 0b0110 Days A Week </p>
-    <p><a href="https://github.com/JoshuaSkootsky/tellMeIfItsAscii">GitHub repo here</a></p>
+		<p>&copy; Joshua Skootsky 2020</p>
+    <!-- <p><a href="https://github.com/JoshuaSkootsky/tellMeIfItsAscii">GitHub repo here</a></p>
+    -->
 	</footer>
 
 	<script src="script.js">

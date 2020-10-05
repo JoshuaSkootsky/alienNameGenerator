@@ -5,7 +5,7 @@
 }
 
 body {
-  background: rgb(31, 192, 241);
+  background-color: white;
   height: 100%;
   padding: 0%;
   margin: 0%;
@@ -13,15 +13,15 @@ body {
 }
 header {
   height: 20%;
-	background-color: #f0903c;
+	background-color: #fdf907;
   padding: 3%;
 }
 
 footer {
-	background-color: #e97f22;
+	background-color: #fdf907;
   padding: 3%;
 }
 main {
   padding: 4%;
-  background-color:rgb(31, 192, 241);
+  background-color: white;
 }

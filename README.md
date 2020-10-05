@@ -1,39 +1,18 @@
-# Is it Ascii?
+# Alien Name Generator
 
-Check it [out on GitHub Pages here](https://joshuaskootsky.github.io/tellMeIfItsAscii/).
+Uses JavaScript to generate an 'alien name translation' based on input.
 
-# This is just a repo for a very simple site
+My goal was to make a website for my students at Thinkful to see an advanced version of a concept they've seen before in the curiculuum. This site demonstrates how 
 
-There's some cool stuff going on. ASCIIness is tested by using charCodeAt. If the charCode is above 127... it isn't ASCII!
+# Features
 
-Some lightweight vanilla JS reactivity is included. The isAscii script runs whenever changes are made to the input field. The input field also has autocomplete turned off so that the suggestions don't get in the way of displaying the result... is it ASCII?
+* Randomization
+* Displays on input into the text field
+* Find out what your alien name is!
 
-# isAscii function
+# Details
+There is an input field with an event listener. Whenever there is input, the event is triggered, and that runs a JavaScript function on the contents of the input field, which generates an alien name. The alien name is supposed to be cool, and it also randomly maps letters to elements of a corresponding array, so it isn't totally predictible.
 
-This is the function that tests if the input field is a string:
+This demonstrates how reactivity can be done with Vanilla JavaScript, no frameworks necessary. On a larger website, the extra work of a framework and Webpack can be worth setting up because it also comes with the tools for handling the extra complexity. 
 
-```javascript
-function isAscii(string) {
-  for (let i = 0; i < string.length; i++) {
-    const charCode = string.charCodeAt(i);
-    if (charCode > 127) return false;
-  }
-  return true;
-}
-```
-
-# Event listners for the form
-
-There is an event listener on the form looking for input. When there is input, setResult fires, which uses `isAscii` to figure out if the text field is ASCII or not.
-
-```javascript
-function setResult() {
-   result.innerHTML = isAscii(textField.value) ? " the string is ASCII " : " the string is not ASCII"
-}
-```
-
-# Check out the REPL.it
-
-[Link here to REPL.it for Is It ASCII?](https://repl.it/@JoshuaSkootsky/tellMeIfItsAscii)
-
-REPL.it has an experimental function where they will turn on version control and commit to GitHub. So Hello from REPL.it!
+This is a small, simple page that does one thing, and it does it well.
