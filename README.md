@@ -2,7 +2,9 @@
 
 Uses JavaScript to generate an 'alien name translation' based on input.
 
-My goal was to make a website for my students at Thinkful to see an advanced version of a concept they've seen before in the curiculuum. This site demonstrates how 
+My goal was to make a website for my students at Thinkful to see an advanced version of a concept they've seen before in the curiculuum. This site demonstrates how.
+
+Check out the site [here](https://joshuaskootsky.github.io/tellMeIfItsAscii/) or [here](https://joshuaskootsky.github.io/tellMeIfItsAscii/).
 
 # Features
 
