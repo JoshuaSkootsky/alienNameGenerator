@@ -80,7 +80,7 @@ const encoder = {
     b: ["boo", "bb"],
     c: ["krax", "ç"],
     d: ["du", "∂"],
-    e: ["i-i", "é"],
+    e: ["i-î", "é"],
     f: ["wa", "ƒ"],
     g: ["k", "˚kay"],
     h: ["ℍ", "^"],
@@ -90,7 +90,7 @@ const encoder = {
     l: ["la", "¬"],
     m: ["meep", "µ"],
     n: ["in", "ñ"],
-    o: ["ȫ ", "ø"],
+    o: ["ȫ", "ø"],
     p: ["plorg", "π"],
     q: ["qlax", "kyo"],
     r: ["ar", "rar"],
@@ -102,7 +102,7 @@ const encoder = {
     x: ["⸖", "≈"],
     y: ["yamska-i'liax", "¥"],
     z: ["Ⱬ", "Ω"],
-    ' ': [' ', '.', '-']
+    ' ': [' ', '*']
   };
 
 function makeDecoder(encoding) {
