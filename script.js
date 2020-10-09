@@ -116,3 +116,5 @@ function makeDecoder(encoding) {
   }
   return decoder;
 }
+
+// naive memoization of makeDecover did not work.
