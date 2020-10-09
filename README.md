@@ -16,3 +16,7 @@ There is an input field with an event listener. Whenever there is input, the eve
 This demonstrates how reactivity can be done with Vanilla JavaScript, no frameworks necessary. On a larger website, the extra work of a framework and Webpack can be worth setting up because it also comes with the tools for handling the extra complexity. 
 
 This is a small, simple page that does one thing, and it does it well.
+
+# GitHub
+
+[https://github.com/JoshuaSkootsky/tellMeIfItsAscii](https://github.com/JoshuaSkootsky/tellMeIfItsAscii)
