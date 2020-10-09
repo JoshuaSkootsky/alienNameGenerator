@@ -105,8 +105,9 @@ const encoder = {
     ' ': [' ', '*']
   };
 
-function makeDecoder(encoding) {
+function makeDecoderUnMemo(encoding) {
   const decoder = {};
+  console.log('Making decoder...');
   for (const letter in encoding) {
     const arr = encoding[letter];
     arr.forEach(alienWord => {
@@ -117,4 +118,15 @@ function makeDecoder(encoding) {
   return decoder;
 }
 
-// naive memoization of makeDecover did not work.
+// I can memoize this
+const makeDecoder = memoize(makeDecoderUnMemo);
+
+function memoize(cb) {
+  const memo = {};
+  return function memoized(n) {
+    if (memo[n] !== undefined) {
+      return memo[n];
+    }
+    return memo[n] = cb(n);
+  }
+}
