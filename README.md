@@ -9,6 +9,7 @@ My goal was to make a website for my students at Thinkful to see an advanced ver
 * Randomization
 * Displays on input into the text field
 * Find out what your alien name is!
+* Translate an alien name back into human language!
 
 # Details
 There is an input field with an event listener. Whenever there is input, the event is triggered, and that runs a JavaScript function on the contents of the input field, which generates an alien name. The alien name is supposed to be cool, and it also randomly maps letters to elements of a corresponding array, so it isn't totally predictible.
