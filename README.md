@@ -20,4 +20,4 @@ This is a small, simple page that does one thing, and it does it well.
 
 # GitHub
 
-[https://github.com/JoshuaSkootsky/tellMeIfItsAscii](https://github.com/JoshuaSkootsky/tellMeIfItsAscii)
+[https://github.com/JoshuaSkootsky/alienNameGenerator](https://github.com/JoshuaSkootsky/alienNameGenerator)
